@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">LostAkt Guide</string>
+
+
+    <string name="log_button">LOG IN</string>
+    <string name="register_button">REGISTER</string>
+    <string name="guest_button">GUEST</string>
+
+
 </resources>
