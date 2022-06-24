@@ -12,9 +12,10 @@
 
 
     <string name="subClass_details">SubClass Details</string>
-    <string name="Class_details">Class Details</string>
+    <string name="class_details">Class Details</string>
     <string name="SubClass_name">SubClass name</string>
 
+    <string name="class_item">class_item</string>
 
 
     <string name="previous_button_description">Botón usado para seleccionar subclase anterior</string>
