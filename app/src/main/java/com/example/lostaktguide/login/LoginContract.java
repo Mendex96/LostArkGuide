@@ -1,31 +1,21 @@
-package com.example.lostaktguide.init;
+package com.example.lostaktguide.login;
 
 import java.lang.ref.WeakReference;
 
-public interface InitContract {
+public interface LoginContract {
 
     interface View {
         void injectPresenter(Presenter presenter);
 
-        void onDataUpdated(InitViewModel viewModel);
+        void onDataUpdated(LoginViewModel viewModel);
 
-        void navigateToLoginScreen();
-
-        void navigateToRegisterScreen();
-
-        void navigateToGuestScreen();
+        void navigateToNextScreen();
     }
 
-        interface Presenter {
+    interface Presenter {
         void injectView(WeakReference<View> view);
 
         void injectModel(Model model);
-
-        void loginButtonClicked();
-        void registerButtonClicked();
-        void guestButtonClicked();
-
-
 
         void onResume();
 

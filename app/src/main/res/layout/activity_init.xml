@@ -4,14 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo"
+    android:background="@drawable/portada"
     tools:context=".init.MainActivity">
 
     <Button
         android:id="@+id/register_button"
-        android:layout_width="235dp"
-        android:layout_height="44dp"
+        android:layout_width="242dp"
+        android:layout_height="52dp"
         android:text="@string/register_button"
+        android:textSize="25sp"
+        android:fontFamily="serif"
         app:cornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,9 +25,11 @@
 
     <Button
         android:id="@+id/guest_button"
-        android:layout_width="235dp"
-        android:layout_height="44dp"
+        android:layout_width="243dp"
+        android:layout_height="51dp"
         android:text="@string/guest_button"
+        android:textSize="25sp"
+        android:fontFamily="serif"
         app:cornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,9 +41,13 @@
 
     <Button
         android:id="@+id/login_button"
-        android:layout_width="235dp"
-        android:layout_height="44dp"
+        android:layout_width="237dp"
+        android:layout_height="52dp"
+        android:fontFamily="serif"
+        android:onClick="logi"
         android:text="@string/log_button"
+        android:textSize="25sp"
+
         app:cornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

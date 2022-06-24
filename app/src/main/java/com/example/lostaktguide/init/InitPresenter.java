@@ -43,6 +43,21 @@ public class InitPresenter implements InitContract.Presenter {
     }
 
     @Override
+    public void loginButtonClicked() {
+    view.get().navigateToLoginScreen();
+    }
+
+    @Override
+    public void registerButtonClicked() {
+
+    }
+
+    @Override
+    public void guestButtonClicked() {
+
+    }
+
+    @Override
     public void injectView(WeakReference<InitContract.View> view) {
         this.view = view;
     }

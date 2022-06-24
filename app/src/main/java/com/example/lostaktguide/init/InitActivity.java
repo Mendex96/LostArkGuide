@@ -2,8 +2,10 @@ package com.example.lostaktguide.init;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.TextView;
 import com.example.lostaktguide.R;
+import com.example.lostaktguide.login.LoginActivity;
 
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,13 +14,22 @@ public class InitActivity
         extends AppCompatActivity implements InitContract.View {
 
     public static String TAG = InitActivity.class.getSimpleName();
-
+    Button  loginButton, registerButton, guestButton;
     private InitContract.Presenter presenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_init);
+        loginButton = findViewById(R.id.login_button);
+        registerButton = findViewById(R.id.register_button);
+        guestButton = findViewById(R.id.guest_button);
+
+        loginButton.setOnClickListener(view -> presenter.loginButtonClicked());
+        registerButton.setOnClickListener(view -> presenter.registerButtonClicked());
+        guestButton.setOnClickListener(view -> presenter.guestButtonClicked());
+
+
 
         // do the setup
         InitScreen.configure(this);
@@ -54,6 +65,22 @@ public class InitActivity
     }
 
     @Override
+    public void navigateToLoginScreen() {
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
+    }
+
+    @Override
+    public void navigateToRegisterScreen() {
+
+    }
+
+    @Override
+    public void navigateToGuestScreen() {
+
+    }
+
+    @Override
     protected void onDestroy() {
         super.onDestroy();
 
@@ -67,13 +94,9 @@ public class InitActivity
 
 
     @Override
-    public void navigateToNextScreen() {
-        Intent intent = new Intent(this, InitActivity.class);
-        startActivity(intent);
-    }
-
-    @Override
     public void injectPresenter(InitContract.Presenter presenter) {
         this.presenter = presenter;
     }
+
+
 }
