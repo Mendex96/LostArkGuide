@@ -7,7 +7,7 @@
     android:background="@drawable/fondo_titulo">
 
     <TextView
-        android:id="@+id/password_name"
+        android:id="@+id/password_nameL"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="348dp"
@@ -43,7 +43,7 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/user_name"
+        android:id="@+id/user_nameL"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="208dp"
@@ -61,7 +61,7 @@
         tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/user_input"
+        android:id="@+id/user_inputL"
         android:layout_width="267dp"
         android:layout_height="44dp"
         android:background="@drawable/input_test_type"
@@ -72,11 +72,11 @@
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/user_name"
+        app:layout_constraintTop_toBottomOf="@+id/user_nameL"
         tools:ignore="LabelFor,MissingConstraints" />
 
     <EditText
-        android:id="@+id/password_input"
+        android:id="@+id/password_inputL"
         android:layout_width="267dp"
         android:layout_height="44dp"
         android:background="@drawable/input_test_type"
@@ -87,7 +87,7 @@
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password_name"
+        app:layout_constraintTop_toBottomOf="@+id/password_nameL"
         tools:ignore="LabelFor" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

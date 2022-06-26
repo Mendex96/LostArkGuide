@@ -7,7 +7,7 @@
     android:background="@drawable/fondo_titulo">
 
     <TextView
-        android:id="@+id/password_name"
+        android:id="@+id/password_nameR"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="serif"
@@ -25,7 +25,7 @@
         tools:layout_editor_absoluteY="388dp" />
 
     <Button
-        android:id="@+id/log_button"
+        android:id="@+id/reg_button"
         android:layout_width="251dp"
         android:layout_height="63dp"
         android:layout_marginBottom="112dp"
@@ -41,7 +41,7 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/user_name"
+        android:id="@+id/user_nameR"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="serif"
@@ -52,13 +52,13 @@
         android:text="@string/user_name"
         android:textColor="@android:color/white"
         android:textSize="40sp"
-        app:layout_constraintBottom_toTopOf="@+id/user_input"
+        app:layout_constraintBottom_toTopOf="@+id/user_inputR"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/user_input"
+        android:id="@+id/user_inputR"
         android:layout_width="267dp"
         android:layout_height="44dp"
         android:background="@drawable/input_test_type"
@@ -70,16 +70,16 @@
         tools:layout_editor_absoluteY="302dp" />
 
     <EditText
-        android:id="@+id/password_input"
+        android:id="@+id/password_inputR"
         android:layout_width="267dp"
         android:layout_height="44dp"
         android:background="@drawable/input_test_type"
         android:ems="10"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/log_button"
+        app:layout_constraintBottom_toTopOf="@+id/reg_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password_name"
+        app:layout_constraintTop_toBottomOf="@+id/password_nameR"
         app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

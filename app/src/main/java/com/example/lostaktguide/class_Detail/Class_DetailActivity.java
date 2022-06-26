@@ -1,41 +1,29 @@
-package com.example.lostaktguide.login;
+package com.example.lostaktguide.class_Detail;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.lostaktguide.R;
 
-public class LoginActivity
-        extends AppCompatActivity implements LoginContract.View {
+public class Class_DetailActivity
+        extends AppCompatActivity implements Class_DetailContract.View {
 
-    public static String TAG = LoginActivity.class.getSimpleName();
-    TextView userName , passworsName;
-    Button loginButton;
-    EditText userText, passwordText;
-    private LoginContract.Presenter presenter;
+    public static String TAG = Class_DetailActivity.class.getSimpleName();
+
+    private Class_DetailContract.Presenter presenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
-       // getSupportActionBar().setTitle(R.string.app_name);
-
-        loginButton = findViewById(R.id.reg_button);
-        userName = findViewById(R.id.user_nameR);
-        passworsName = findViewById(R.id.password_nameR);
-        passwordText = findViewById(R.id.password_inputR);
-        userText = findViewById(R.id.user_inputR);
-
-
+        setContentView(R.layout.activity_class_detail);
+        getSupportActionBar().setTitle(R.string.app_name);
 
 
         // do the setup
-        LoginScreen.configure(this);
+        Class_DetailScreen.configure(this);
 
         if (savedInstanceState == null) {
             presenter.onStart();
@@ -50,7 +38,7 @@ public class LoginActivity
         super.onResume();
 
         // load the data
-       // presenter.onResume();
+        presenter.onResume();
     }
 
     @Override
@@ -75,22 +63,22 @@ public class LoginActivity
     }
 
     @Override
-    public void onDataUpdated(LoginViewModel viewModel) {
+    public void onDataUpdated(Class_DetailViewModel viewModel) {
         //Log.e(TAG, "onDataUpdated()");
 
         // deal with the data
-       // ((TextView) findViewById(R.id.password_input)).setText(viewModel.data);
+        //((TextView) findViewById(R.id.data)).setText(viewModel.data);
     }
 
 
     @Override
     public void navigateToNextScreen() {
-        Intent intent = new Intent(this, LoginActivity.class);
+        Intent intent = new Intent(this, Class_DetailActivity.class);
         startActivity(intent);
     }
 
     @Override
-    public void injectPresenter(LoginContract.Presenter presenter) {
+    public void injectPresenter(Class_DetailContract.Presenter presenter) {
         this.presenter = presenter;
     }
 }
