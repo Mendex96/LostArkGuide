@@ -26,6 +26,4 @@ public class ClassItem {
     @SerializedName("subClass")
     public List<SubClassItem> subClass;
 
-    @Ignore
-    public boolean init_state;
 }

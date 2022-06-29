@@ -1,33 +1,35 @@
 package com.example.lostaktguide.init;
 
+import android.util.Log;
+
+import com.example.lostaktguide.data.GuideRepository;
+import com.example.lostaktguide.data.RepositoryContract;
+
 public class InitModel implements InitContract.Model {
 
     public static String TAG = InitModel.class.getSimpleName();
 
-    private String data;
+    private GuideRepository repository;
 
-    public InitModel(String data) {
-        this.data = data;
+    public InitModel(GuideRepository repository) {
+        this.repository = repository;
     }
 
-    @Override
-    public String getStoredData() {
-        // Log.e(TAG, "getStoredData()");
-        return data;
-    }
 
     @Override
-    public void onRestartScreen(String data) {
-        // Log.e(TAG, "onRestartScreen()");
-    }
+    public void fetchInitListData(RepositoryContract.GetUserListCallback callback) {
+        Log.e(TAG, "fetchUserListData()");
+        repository.loadUser(
+                true, new RepositoryContract.FetchUserDataCallback() {
+                    @Override
+                    public void onUserDataFetched(boolean error) {
+                        if (!error){
+                            repository.getUserList(callback);
+                        }
+                    }
+                }
+        );
 
-    @Override
-    public void onDataFromNextScreen(String data) {
-        // Log.e(TAG, "onDataFromNextScreen()");
-    }
 
-    @Override
-    public void onDataFromPreviousScreen(String data) {
-        // Log.e(TAG, "onDataFromPreviousScreen()");
     }
 }

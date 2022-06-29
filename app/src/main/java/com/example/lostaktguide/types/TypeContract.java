@@ -37,15 +37,9 @@ public interface TypeContract {
     }
 
     interface Model {
-        String getStoredData();
 
-        void onDataFromNextScreen(String data);
-
-        void onRestartScreen(String data);
         void fetchTypeData(
                 RepositoryContract.GetTypeCallback callback);
-
-        void onDataFromPreviousScreen(String data);
     }
 
 }

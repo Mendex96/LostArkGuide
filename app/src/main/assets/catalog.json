@@ -219,5 +219,17 @@
       "url_imagen":"https://drive.google.com/file/d/1k24yZcelmGhPTbg2zeJNPfvTgtMF2IXU/view?usp=sharing",
       "subClass" : []
     }
+  ],
+  "user": [
+    {
+      "id_user": 1,
+      "user": "prueba",
+      "password": "prueba"
+    },
+    {
+      "id_user": 1,
+      "user": "eugenio",
+      "password": "eugenio"
+    }
   ]
 }

@@ -4,6 +4,7 @@ import androidx.fragment.app.FragmentActivity;
 
 import com.example.lostaktguide.R;
 import com.example.lostaktguide.app.GuideMediator;
+import com.example.lostaktguide.data.GuideRepository;
 
 import java.lang.ref.WeakReference;
 
@@ -17,9 +18,9 @@ public class TypeScreen {
         String data = context.get().getString(R.string.app_name);
 
         GuideMediator mediator = GuideMediator.getInstance();
-
+        GuideRepository repository = GuideRepository.getInstance(context.get());
         TypeContract.Presenter presenter = new TypePresenter(mediator);
-        TypeContract.Model model = new TypeModel(data);
+        TypeContract.Model model = new TypeModel(repository);
         presenter.injectModel(model);
         presenter.injectView(new WeakReference<>(view));
 

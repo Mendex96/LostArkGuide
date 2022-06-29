@@ -19,12 +19,7 @@ public class TypeActivity
     public static String TAG = TypeActivity.class.getSimpleName();
 
     private TypeContract.Presenter presenter;
-
-    @Override
-    public void navigateToSubClassScreen() {
-        Intent intent = new Intent(this, SubClassActivity.class);
-        startActivity(intent);
-    }
+    private TypeAdapter typeAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,12 +76,16 @@ public class TypeActivity
 
             @Override
             public void run() {
-
-                // deal with the data
-                //TypeAdapter.setItems(viewModel.classes);
+                typeAdapter.setItems(viewModel.classes);
             }
 
         });
+    }
+
+    @Override
+    public void navigateToSubClassScreen() {
+        Intent intent = new Intent(this, SubClassActivity.class);
+        startActivity(intent);
     }
 
     @Override

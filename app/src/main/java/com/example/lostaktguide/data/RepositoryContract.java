@@ -4,8 +4,12 @@ import java.util.List;
 
 public interface RepositoryContract {
 
-    interface FetchCatalogDataCallback {
-        void onCatalogDataFetched(boolean error);
+    interface FetchClassDataCallback {
+        void onTypeDataFetched(boolean error);
+    }
+
+    interface FetchUserDataCallback {
+        void onUserDataFetched(boolean error);
     }
 
     interface GetTypeCallback {
@@ -26,31 +30,15 @@ public interface RepositoryContract {
 
 
 
-/*
-
-
     void loadCatalog(
-            boolean clearFirst, GuideRepository.FetchCatalogDataCallback callback);
+            boolean clearFirst, FetchClassDataCallback callback);
 
-    void getProductList(
-            CategoryItem category, GuideRepository.GetProductListCallback callback);
+    void loadUser(
+            boolean clearFirst, FetchUserDataCallback callback);
 
-    void getProductList(
-            int categoryId, GuideRepository.GetProductListCallback callback);
+    void getTypeList(GuideRepository.GetTypeCallback callback);
 
-    void getProduct(int id, GuideRepository.GetProductCallback callback);
-    void getCategory(int id, GuideRepository.GetCategoryCallback callback);
-    void getCategoryList(GuideRepository.GetCategoryListCallback callback);
+    void getUserList(RepositoryContract.GetUserListCallback callback);
 
-    void deleteProduct(
-            ProductItem product, GuideRepository.DeleteProductCallback callback);
 
-    void updateProduct(
-            ProductItem product, GuideRepository.UpdateProductCallback callback);
-
-    void deleteCategory(
-            CategoryItem category, GuideRepository.DeleteCategoryCallback callback);
-
-    void updateCategory(
-            CategoryItem category, GuideRepository.UpdateCategoryCallback callback);*/
 }

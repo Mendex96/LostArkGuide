@@ -90,7 +90,7 @@ public class TypePresenter implements TypeContract.Presenter {
 
     @Override
     public void fetchTypeListData() {
-        model.fetchTypeData(new RepositoryContract.GetTypeCallback() {
+        model.fetchTypeData( new RepositoryContract.GetTypeCallback() {
             @Override
             public void setClassList(List<ClassItem> classes) {
                 state.classes = classes;

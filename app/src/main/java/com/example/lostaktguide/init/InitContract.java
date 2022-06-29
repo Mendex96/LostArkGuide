@@ -2,6 +2,8 @@ package com.example.lostaktguide.init;
 
 import android.content.Context;
 
+import com.example.lostaktguide.data.RepositoryContract;
+
 import java.lang.ref.WeakReference;
 
 public interface InitContract {
@@ -45,13 +47,8 @@ public interface InitContract {
     }
 
     interface Model {
-        String getStoredData();
-
-        void onDataFromNextScreen(String data);
-
-        void onRestartScreen(String data);
-
-        void onDataFromPreviousScreen(String data);
+       void fetchInitListData(
+                 RepositoryContract.GetUserListCallback callback);
     }
 
 }

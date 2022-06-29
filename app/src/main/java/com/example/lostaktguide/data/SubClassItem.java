@@ -39,5 +39,5 @@ public class SubClassItem {
         public String video;
 
         @ColumnInfo(name = "class_id")
-        public String class_id;
+        public int class_id;
 }

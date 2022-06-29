@@ -8,10 +8,13 @@ import androidx.room.PrimaryKey;
 public class UserItem {
 
     @PrimaryKey
+    @ColumnInfo(name = "id_user")
     public int id_user;
 
-
+    @ColumnInfo(name = "user")
     public String user;
+
+    @ColumnInfo(name = "password")
     public String password;
 
     @Override

@@ -37,11 +37,11 @@ public class FavoriteItem {
 
     @ColumnInfo(name = "user_id")
     @NonNull
-    public int user_id;
+    public UserItem user_id;
 
     @ColumnInfo(name = "subClass_id")
     @NonNull
-    public int subClass_id;
+    public SubClassItem subClass_id;
 
 
 

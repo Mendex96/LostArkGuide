@@ -1,40 +1,33 @@
 package com.example.lostaktguide.types;
 
+import android.util.Log;
+
 import com.example.lostaktguide.data.RepositoryContract;
 
 public class TypeModel implements TypeContract.Model {
 
     public static String TAG = TypeModel.class.getSimpleName();
 
-    private String data;
+    private RepositoryContract repository;
 
-    public TypeModel(String data) {
-        this.data = data;
+    public TypeModel(RepositoryContract repository) {
+        this.repository = repository;
     }
 
     @Override
-    public String getStoredData() {
-        // Log.e(TAG, "getStoredData()");
-        return data;
-    }
+    public void fetchTypeData(
+            RepositoryContract.GetTypeCallback callback) {
+        Log.e(TAG, "fetchTypeListData()");
 
-    @Override
-    public void onRestartScreen(String data) {
-        // Log.e(TAG, "onRestartScreen()");
-    }
+        repository.loadCatalog(
+                false, new RepositoryContract.FetchClassDataCallback() {
 
-    @Override
-    public void fetchTypeData(RepositoryContract.GetTypeCallback callback) {
-
-    }
-
-    @Override
-    public void onDataFromNextScreen(String data) {
-        // Log.e(TAG, "onDataFromNextScreen()");
-    }
-
-    @Override
-    public void onDataFromPreviousScreen(String data) {
-        // Log.e(TAG, "onDataFromPreviousScreen()");
+                    @Override
+                    public void onTypeDataFetched(boolean error) {
+                        if(!error) {
+                            repository.getTypeList(callback);
+                        }
+                    }
+                });
     }
 }

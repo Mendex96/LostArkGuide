@@ -4,6 +4,8 @@ import androidx.fragment.app.FragmentActivity;
 
 import com.example.lostaktguide.R;
 import com.example.lostaktguide.app.GuideMediator;
+import com.example.lostaktguide.data.GuideRepository;
+import com.example.lostaktguide.data.RepositoryContract;
 
 import java.lang.ref.WeakReference;
 
@@ -16,6 +18,7 @@ public class LoginScreen {
 
 
         GuideMediator mediator = GuideMediator.getInstance();
+        RepositoryContract repository = GuideRepository.getInstance(context.get());
 
         LoginContract.Presenter presenter = new LoginPresenter(mediator);
         LoginContract.Model model = new LoginModel();
