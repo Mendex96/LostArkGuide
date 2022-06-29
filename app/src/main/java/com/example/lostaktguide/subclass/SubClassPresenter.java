@@ -15,11 +15,11 @@ public class SubClassPresenter implements SubClassContract.Presenter {
 
     public SubClassPresenter(GuideMediator mediator) {
         this.mediator = mediator;
-        state = mediator.getSubClassState();
+        //state = mediator.getSubClassState();
     }
 
     @Override
-    public void onStart() {
+    public void onStart() {/*
         // Log.e(TAG, "onStart()");
 
         // initialize the state
@@ -37,7 +37,7 @@ public class SubClassPresenter implements SubClassContract.Presenter {
 
             // update the state if is necessary
             state.data = savedState.data;
-        }
+        }*/
     }
 
     @Override
@@ -51,7 +51,7 @@ public class SubClassPresenter implements SubClassContract.Presenter {
     @Override
     public void onResume() {
         // Log.e(TAG, "onResume()");
-
+/*
         // use passed state if is necessary
         NextToSubClassState savedState = getStateFromNextScreen();
         if (savedState != null) {
@@ -67,7 +67,7 @@ public class SubClassPresenter implements SubClassContract.Presenter {
         //state.data = model.getStoredData();
 
         // update the view
-        view.get().onDataUpdated(state);
+        view.get().onDataUpdated(state);*/
 
     }
 
@@ -85,7 +85,7 @@ public class SubClassPresenter implements SubClassContract.Presenter {
     public void onDestroy() {
         // Log.e(TAG, "onDestroy()");
     }
-
+/*
     private NextToSubClassState getStateFromNextScreen() {
         return mediator.getNextSubClassScreenState();
     }
@@ -100,7 +100,7 @@ public class SubClassPresenter implements SubClassContract.Presenter {
 
     private PreviousToSubClassState getStateFromPreviousScreen() {
         return mediator.getPreviousSubClassScreenState();
-    }
+    }*/
 
     @Override
     public void injectView(WeakReference<SubClassContract.View> view) {

@@ -6,6 +6,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import com.example.lostaktguide.R;
 import com.example.lostaktguide.login.LoginActivity;
+import com.example.lostaktguide.register.RegisterActivity;
 
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -72,7 +73,8 @@ public class InitActivity
 
     @Override
     public void navigateToRegisterScreen() {
-
+        Intent intent = new Intent(this, RegisterActivity.class);
+        startActivity(intent);
     }
 
     @Override

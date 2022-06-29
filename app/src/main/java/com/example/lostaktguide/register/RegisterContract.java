@@ -1,27 +1,21 @@
-package com.example.lostaktguide.types;
-
-import com.example.lostaktguide.data.ClassItem;
-import com.example.lostaktguide.data.RepositoryContract;
+package com.example.lostaktguide.register;
 
 import java.lang.ref.WeakReference;
 
-public interface TypeContract {
+public interface RegisterContract {
 
     interface View {
         void injectPresenter(Presenter presenter);
 
-        void displayTypeListData(TypeViewModel viewModel);
+        void onDataUpdated(RegisterViewModel viewModel);
 
-        void navigateToSubClassScreen();
+        void navigateToNextScreen();
     }
 
     interface Presenter {
         void injectView(WeakReference<View> view);
 
         void injectModel(Model model);
-
-        void selectTypeListData(ClassItem item);
-        void fetchTypeListData();
 
         void onResume();
 
@@ -42,8 +36,6 @@ public interface TypeContract {
         void onDataFromNextScreen(String data);
 
         void onRestartScreen(String data);
-        void fetchTypeData(
-                RepositoryContract.GetTypeCallback callback);
 
         void onDataFromPreviousScreen(String data);
     }

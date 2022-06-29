@@ -6,6 +6,8 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.lostaktguide.R;
+
 public class RegisterActivity
         extends AppCompatActivity implements RegisterContract.View {
 
@@ -16,8 +18,7 @@ public class RegisterActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_);
-        getSupportActionBar().setTitle(R.string.app_name);
+        setContentView(R.layout.activity_register);
 
 
         // do the setup
@@ -65,7 +66,7 @@ public class RegisterActivity
         //Log.e(TAG, "onDataUpdated()");
 
         // deal with the data
-        ((TextView) findViewById(R.id.data)).setText(viewModel.data);
+       // ((TextView) findViewById(R.id.data)).setText(viewModel.data);
     }
 
 

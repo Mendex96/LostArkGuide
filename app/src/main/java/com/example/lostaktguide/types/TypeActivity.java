@@ -10,6 +10,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.lostaktguide.R;
 import com.example.lostaktguide.data.ClassItem;
+import com.example.lostaktguide.login.LoginActivity;
+import com.example.lostaktguide.subclass.SubClassActivity;
 
 public class TypeActivity
         extends AppCompatActivity implements TypeContract.View {
@@ -19,23 +21,28 @@ public class TypeActivity
     private TypeContract.Presenter presenter;
 
     @Override
+    public void navigateToSubClassScreen() {
+        Intent intent = new Intent(this, SubClassActivity.class);
+        startActivity(intent);
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_type_list);
-        getSupportActionBar().setTitle(R.string.app_name);
 
-
-        listAdapter = new TypeA(new View.OnClickListener() {
-
+        TypeAdapter typeAdapter = new TypeAdapter(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ClassItem item = (ClassItem) Item) view.getTag();
-                presenter.selectCategoryListData(item);
+                ClassItem item = (ClassItem) view.getTag();
+                presenter.selectTypeListData(item);
             }
         });
-        RecyclerView recyclerView = findViewById(R.id.category_list);
-        recyclerView.setAdapter(listAdapter);
 
+        RecyclerView recyclerView = findViewById(R.id.category_list);
+        recyclerView.setAdapter(typeAdapter);
+        TypeScreen.configure(this);
+        presenter.fetchTypeListData();
     }
 
     @Override
@@ -67,19 +74,19 @@ public class TypeActivity
         presenter.onDestroy();
     }
 
-    @Override
-    public void onDataUpdated(TypeViewModel viewModel) {
-        //Log.e(TAG, "onDataUpdated()");
-
-        // deal with the data
-       // ((TextView) findViewById(R.id.data)).setText(viewModel.data);
-    }
-
 
     @Override
-    public void navigateToNextScreen() {
-        Intent intent = new Intent(this, TypeActivity.class);
-        startActivity(intent);
+    public void displayTypeListData(TypeViewModel viewModel) {
+        runOnUiThread(new Runnable() {
+
+            @Override
+            public void run() {
+
+                // deal with the data
+                //TypeAdapter.setItems(viewModel.classes);
+            }
+
+        });
     }
 
     @Override

@@ -1,0 +1,223 @@
+{
+  "class": [
+    {
+      "id_class": 1,
+      "nombre": "Maga",
+      "url_imagen":"https://drive.google.com/file/d/1XEmMeNOCh9awDq1ckrIqTf3f0YqI600d/view?usp=sharing",
+      "subClass" : [
+        {
+          "id_subClass": 1,
+          "nombre_subClass": "Hechicera",
+          "imagen_subClass": "https://drive.google.com/file/d/1BN-9hMkysVvrGu7YEhNc_D4NpAJnq7Hj/view?usp=sharing",
+          "imagen_superior": "https://drive.google.com/file/d/1i_08gnWVXKjSUE-nQxNjOgbaN3QzySSf/view?usp=sharing",
+          "imagen_habilidad": "https://drive.google.com/file/d/196Uw01oD4FoGl8F_wkXBM5r59cUKDNC5/view?usp=sharing",
+          "info": "La Hechicera es una de las dos clases de Mago disponibles en Lost Ark. Está especializada en infligir un gran daño mágico a distancia, principalmente con elementos de fuego, rayo y hielo.",
+          "url_video": "https://youtu.be/eWCmDX21EIM"
+        },
+        {
+          "id_subClass": 7,
+          "nombre_subClass": "Bardo",
+          "imagen_subClass": "https://drive.google.com/file/d/10L-WQa0QYtXGwYSJQ6gdnLzJHINlSaN2/view?usp=sharing",
+          "imagen_superior": "https://drive.google.com/file/d/1NFKxDS45B4WZbyLcVIkTusbW4bir_yzY/view?usp=sharing",
+          "imagen_habilidad": "https://drive.google.com/file/d/1UG3pHL3vX7nB_l9DXe0gA-kOTg_jkXXR/view?usp=sharing",
+          "info": "El Bardo es una de las dos clases de support en Lost Ark, y una de las clases más solicitadas en cualquier Asalto. Cuanto más difícil es el contenido, más importantes son los Bardos. ",
+          "url_video": "https://youtu.be/eWCmDX21EIM?t=188"
+        }
+      ]
+
+    },
+    {
+      "id_class": 2,
+      "nombre": "Artillero",
+      "url_imagen":"https://drive.google.com/file/d/1t_mNwuQ7VP1cdi94tGC0iNNs9MAgApDy/view?usp=sharing",
+      "subClass" : [
+        {
+          "id_subClass": 2,
+          "nombre_subClass": "Pistolero",
+          "imagen_subClass": "https://drive.google.com/file/d/17na9u25DRYYWapAC90vhefF5a2McN-Md/view?usp=sharing",
+          "imagen_superior": "https://drive.google.com/file/d/1wZIun4pM2UFC9fw8hNf6sTlnDaTM_cPO/view?usp=sharing",
+          "imagen_habilidad": "https://drive.google.com/file/d/1UG3pHL3vX7nB_l9DXe0gA-kOTg_jkXXR/view?usp=sharing",
+          "info": "Esta versión del Pistolero gira en torno al Grabado de Clase Hora de cazar. Elimina la Escopeta de su arsenal a cambio de añadir Tasa de Crítico a todas sus habilidades restantes. Esto le permite asignar más puntos en otras Estadísticas de Combate.",
+          "url_video": "https://youtu.be/YJElgLsMIbg"
+        },
+        {
+          "id_subClass": 8,
+          "nombre_subClass": "Artificiero",
+          "imagen_subClass": "https://drive.google.com/file/d/1BvoCwcZP-buzvW1xzJ3HiEYacF-Ep3gA/view?usp=sharing",
+          "imagen_superior": "https://drive.google.com/file/d/1Da3Lvz4bw8Td3hFMigZGAYRbEG2YhPSC/view?usp=sharing",
+          "imagen_habilidad": "https://drive.google.com/file/d/1UG3pHL3vX7nB_l9DXe0gA-kOTg_jkXXR/view?usp=sharing",
+          "info": "El Artificiero es una de las clases del Artillero en Lost Ark. Es fácil de aprender, pero difícil de dominar. Sus principales habilidades de daño, como Asalto aéreo y Cortina rastreadora tienen un retraso entre el golpe y el tiempo de lanzamiento, por lo que se requiere un conocimiento de los patrones y las mecánicas de los jefes para jugar con el Artificiero al máximo de su potencial.",
+          "url_video": "https://youtu.be/OBGdsds9Dm4"
+        },
+        {
+          "id_subClass": 13,
+          "nombre_subClass": "Cazademonios",
+          "imagen_subClass": "https://drive.google.com/file/d/1ofykiARElioNaLQbHm8slKNNK63IoMak/view?usp=sharing",
+          "imagen_superior": "https://drive.google.com/file/d/12_iiAmjXe_S59DdEvUJxWEVzyp5e14AI/view?usp=sharing",
+          "imagen_habilidad": "https://drive.google.com/file/d/1UG3pHL3vX7nB_l9DXe0gA-kOTg_jkXXR/view?usp=sharing",
+          "info": "Los Cazademonios Tirador se centran únicamente en sus Habilidades de Pistola Skills, ya que sus otras armas están bloqueadas. En comparación con la versión de Arma mejorada, el estilo de juego del Cazademonios Tirador gira en torno a los bajos Enfriamientos de las Habilidades de Pistola, lo que permite un daño por segundo (DPS) constante a lo largo de un combate. Además, no es necesario Atacar por la Espalda para obtener un DPS óptimo, como en el caso de los Cazademonios de Arma mejorada.",
+          "url_video": "https://youtu.be/bdgKGix_KaE"
+        },
+        {
+          "id_subClass": 16,
+          "nombre_subClass": "Francotirador",
+          "imagen_subClass": "https://drive.google.com/file/d/1gV5_prF-yMXU1VyA1qOTQNvtktaq97Du/view?usp=sharing",
+          "imagen_superior": "https://drive.google.com/file/d/1Z0GxSXIdv8WFh1kBR007Obe1uZuhUDAt/view?usp=sharing",
+          "imagen_habilidad": "https://drive.google.com/file/d/1UG3pHL3vX7nB_l9DXe0gA-kOTg_jkXXR/view?usp=sharing",
+          "info": "Los Francotiradores tienen dos \nGrabado de clase a su disposición: Golpe mortal y Acompañante fiel, pero sólo tienen un estilo de juego. Pueden elegir usar uno o ambos al mismo tiempo.",
+          "url_video": "https://youtu.be/WPp6DwB9_bM"
+        }
+
+      ]
+
+    },
+    {
+      "id_class": 3,
+      "nombre": "Asesina",
+      "url_imagen":"https://drive.google.com/file/d/1YcFd370cXEdcFfw9YBBMIi45DhrcEgww/view?usp=sharing",
+      "subClass" : [
+        {
+          "id_subClass": 3,
+          "nombre_subClass": "Cazasombras",
+          "imagen_subClass": "https://drive.google.com/file/d/15D-FHGZm8Pb6ChP5Zy5IVRa0Jj0W8bVc/view?usp=sharing",
+          "imagen_superior": "https://drive.google.com/file/d/1nkIpkJ7LaljVdt9XBhDDmNXeWpbGUYd0/view?usp=sharing",
+          "imagen_habilidad": "https://drive.google.com/file/d/1ZrfYhbViAWXY3mo6xCrIYEOAUlGdPYXy/view?usp=sharing",
+          "info": "Las Cazasombras tienen un Indicador de Identidad llamado Indicador de Estallido Sombrío. Se carga utilizando habilidades en Forma Humana. Mientras que el objetivo principal de Impulso demoníaco es utilizar Demonizar una vez que su Indicador de Estallido Sombrío está lleno y obtener habilidades de gran daño en Forma Demoníaca; La Cazasombras de Supresión perfecta se centra en utilizar su Indicador de Estallido Sombrío para potenciar sus habilidades en Forma Humana. Sus dos habilidades de gasto, Cortador cruel y Demolición, infligen un daño adicional significativo al consumir Indicador de Estallido Sombrío.",
+          "url_video": "https://youtu.be/xJM1dpTF2rg"
+        },
+        {
+          "id_subClass": 9,
+          "nombre_subClass": "Espada Letal",
+          "imagen_subClass": "https://drive.google.com/file/d/1xYFH7YScsRqsF0HmHmNT1kORthg3oDf6/view?usp=sharing",
+          "imagen_superior": "https://drive.google.com/file/d/1IS7fhx9-66QpE55ec6VAeLDdohjE066J/view?usp=sharing",
+          "imagen_habilidad": "https://drive.google.com/file/d/1tzEErBrHoboAWgNWXpqE6e4qldIj7zVh/view?usp=sharing",
+          "info": "La Espada Letal tiene dos variantes de Asalto viables que se centran en cada uno de sus \nGrabado de clase, Energía restante y Estallido. Este artículo se centra en la segunda, la Espada Letal de  Estallido build.",
+          "url_video": "https://youtu.be/cM-kJsZJDvY"
+        }
+      ]
+
+    },
+    {
+      "id_class": 4,
+      "nombre": "Guerrero",
+      "url_imagen":"https://drive.google.com/file/d/12fvilMMHxAgt7Uvu39lZDBfT0Ltmr_Sa/view?usp=sharing",
+      "subClass" : [
+        {
+          "id_subClass": 4,
+          "nombre_subClass": "Berserker",
+          "imagen_subClass": "https://drive.google.com/file/d/1bp0oG7dkxcmw_y8tLDVq9pFAqvWb5_hk/view?usp=sharing",
+          "imagen_superior": "https://drive.google.com/file/d/1HbOKSp0oiMQaxvmZ6RsqNJA93v8VZbEY/view?usp=sharing",
+          "imagen_habilidad": "https://drive.google.com/file/d/1ocWslzECaJIQ0ov8jHiGa-HO1AFBulhz/view?usp=sharing",
+          "info": "La principal ventaja de los Berserkers Técnica de la clase berserker sobre los Berserkers Demencia son las estadísticas brutas gratuitas que obtienen cuando están en el Modo Burst. Ganan un +30% de Tasa de Crítico, un +20% de Velocidad de Ataque y un +20% de Velocidad de Movimiento, mientras que Demencia pierde la Tasa de Crítico y un 5% de las otras dos estadísticas. En Modo Burst, obtienes acceso a una habilidad con daño masivo llamada Carrera sangrienta. Esta habilidad inflige mucho más daño al acumular Especialización.",
+          "url_video": "https://youtu.be/umvJqJYTeMQ"
+        },
+        {
+          "id_subClass": 10,
+          "nombre_subClass": "Paladín",
+          "imagen_subClass": "https://drive.google.com/file/d/1Zn2b451VBLZMfcE6ydV7xs9o2RhSNvT9/view?usp=sharing",
+          "imagen_superior": "https://drive.google.com/file/d/13t2pmM3vSfSWEG7bX9DHgm6oMw8Mt2mD/view?usp=sharing",
+          "imagen_habilidad": "https://drive.google.com/file/d/12l8FY0ufpFWpUJzzyCBj2uudLO_Mk5Uq/view?usp=sharing",
+          "info": "El Paladín es una de las dos clases de support en Lost Ark. Mientras que las Bardas evitan el daño centrándose en mantener activos escudos, los Paladines intentan mitigar el daño utilizando habilidades de Reducción de Daño en los aliados.",
+          "url_video": "https://youtu.be/wG9-wnU3O9c"
+        },
+        {
+          "id_subClass": 14,
+          "nombre_subClass": "Artillero de lanza",
+          "imagen_subClass": "https://drive.google.com/file/d/19-mGoD0X_anbvYEgzjeOEK7M_z3gDdD8/view?usp=sharing",
+          "imagen_superior": "https://drive.google.com/file/d/1xxv61oO1M3qWnBOQKdAScS7chZTltUDF/view?usp=sharing",
+          "imagen_habilidad": "https://drive.google.com/file/d/12l8FY0ufpFWpUJzzyCBj2uudLO_Mk5Uq/view?usp=sharing",
+          "info": "El Artillero de Lanza Preparación para el combate, también conocido como el Artillero de Lanza Azul, tiene un daño de Sumisión decente y la mayor capacidad de supervivencia en Lost Ark. Las estadísticas de combate se centran en la Especialización y, junto con su habilidad de identidad Posición defensiva, permiten al Artillero de Lanza tanquear la mayoría de las habilidades de los jefes con facilidad. Además, Especialización aumenta el daño de sus habilidades normales, azules y spameables como Azote de escudo y Choque de escudo. Preparación para el combate también aumenta el daño infligido por el Artillero de Lanza cada vez que es golpeado, lo que permite al Artillero de Lanza Azul infligir un daño constante sin tener que esquivar la mayoría de los ataques. Por desgracia, esto puede provocar problemas de maná en los tiers inferiores y requiere el potenciador de regeneración de maná de la Barda.",
+          "url_video": "https://youtu.be/ECYoYtQXv-4"
+        },
+        {
+          "id_subClass": 17,
+          "nombre_subClass": "Destructor",
+          "imagen_subClass": "https://drive.google.com/file/d/13BhJXZ9JAPE52lRRJfsSG63DTKB-CqZA/view?usp=sharing",
+          "imagen_superior": "https://drive.google.com/file/d/1BEPNqT_q5utvb4YYqg4ltKObf8en2sK5/view?usp=sharing",
+          "imagen_habilidad": "https://drive.google.com/file/d/1b1shI6d8se1zqCijw9zNw0e1MMMq4I-8/view?usp=sharing",
+          "info": "Para infligir un daño masivo, los Destructores generan Núcleos utilizando Habilidades de Concentración como Machaque pesado. Luego gastan los Núcleos utilizando Habilidades de Fuerza de la Gravedad como Golpe perfecto, infligiendo daño extra basado en el número de Núcleos consumidos",
+          "url_video": "https://youtu.be/-aHUdJIf0Eg"
+        }
+
+      ]
+
+    },
+    {
+      "id_class": 5,
+      "nombre": "Artista",
+      "url_imagen":"https://drive.google.com/file/d/1S1w6S6YGuxbz0zJ3R3WXtS_Th28vMjOS/view?usp=sharing",
+      "subClass" : [
+        {
+          "id_subClass": 5,
+          "nombre_subClass": "Striker",
+          "imagen_subClass": "https://drive.google.com/file/d/1-xy-xVi2Qi7nHoqP9-MgJtyxUMFl_err/view?usp=sharing",
+          "imagen_superior": "https://drive.google.com/file/d/1mItyIfwG5JVhctimLqZzXm1NbodKe0fc/view?usp=sharing",
+          "imagen_habilidad": "https://drive.google.com/file/d/1kdJTA2MHeEJ2IwKu97R_GGDbfqg3VFOQ/view?usp=sharing",
+          "info": "Los Strikers de Ráfaga esotérica se basan en su Indicador de Identidad, llamado Indicador Elemental, mediante el uso de habilidades de gasto como Habilidad esotérica: Aparición del tigre, Habilidad esotérica: Formación de explosión y Habilidad esotérica: Golpe del tigre centelleant",
+          "url_video": "https://youtu.be/pRSgnRdYCFI"
+        },
+        {
+          "id_subClass": 11,
+          "nombre_subClass": "Bailarín guerrera",
+          "imagen_subClass": "https://drive.google.com/file/d/1Qad6CxJSNOZOQ87Uk8ji2bIvuTJU8v4m/view?usp=sharing",
+          "imagen_superior": "https://drive.google.com/file/d/1rSyew1tYIbMsVrZk_z3lWA33ziw_-RNT/view?usp=sharing",
+          "imagen_habilidad": "https://drive.google.com/file/d/1kdJTA2MHeEJ2IwKu97R_GGDbfqg3VFOQ/view?usp=sharing",
+          "info": "La Bailarina Guerrera de Primera intención es una de las clases con mayor movilidad en Lost Ark. Este personaje se centra en la Rapidez que aumenta la Velocidad de Movimiento y la Velocidad de Ataque y reduce el Enfriamiento de todas las habilidades, excepto el Despertar. Esto conduce a problemas de maná al principio de la progresión que puedes ser contrarrestados con la mejora de regeneración de maná de una Barda aliada. El Grabado de Clase aumenta el daño de todas las habilidades al sellar la obtención del Indicador Elemental.",
+          "url_video": "https://youtu.be/lWu5LJ2pRkw"
+        },
+        {
+          "id_subClass": 15,
+          "nombre_subClass": "Matona",
+          "imagen_subClass": "https://drive.google.com/file/d/1urzdSlhTO2lVZN6mLyIGVdE2Xm614RjJ/view?usp=sharing",
+          "imagen_superior": "https://drive.google.com/file/d/1mWHJvP1OKPdwi2Ucel4LR8FnTAX5q_kW/view?usp=sharing",
+          "imagen_habilidad": "https://drive.google.com/file/d/1zeZQZxnYSfVllwrs2GMZdmzHdU_4_zrE/view?usp=sharing",
+          "info": "A diferencia de la variante de Entrenamiento de impacto, que se centra en realizar ataques de gran daño principalmente con sus habilidades de Impacto, la Matona de Habilidad definitiva: Taijutsu se centra casi exclusivamente en sus habilidades de Resistencia. Tienen un kit versátil que permite un juego rápido e intenso. El aumento de la generación de Resistencia gracias al Grabado facilita la gestión de su Indicador de Resistencia y te permite prestar más atención a la batalla.",
+          "url_video": "https://youtu.be/9keiHkONBEE"
+        },
+        {
+          "id_subClass": 18,
+          "nombre_subClass": "Guijista",
+          "imagen_subClass": "https://drive.google.com/file/d/1urzdSlhTO2lVZN6mLyIGVdE2Xm614RjJ/view?usp=sharing",
+          "imagen_superior": "https://drive.google.com/file/d/1KhSXrqoPwAKu_Nz88hxJ88wZfuRbpN5N/view?usp=sharing",
+          "imagen_habilidad": "https://drive.google.com/file/d/1erHVp1KWHhHCmdsgi6cJAfUmXQ7ccBEU/view?usp=sharing",
+          "info": "La Gujista de Control es muy rápida y ágil, capaz de bombardear habilidades en Posición de centrado. Esta variante no tiene cambio de postura debido a que se ha eliminado la Posición de ráfaga, lo que simplifica la rotación de habilidades en comparación con la Gujista de Cima.",
+          "url_video": "https://youtu.be/MqMrkS-ajAk"
+        }
+
+      ]
+
+    },
+    {
+      "id_class": 6,
+      "nombre": "Especialista",
+      "url_imagen":"https://drive.google.com/file/d/1PUHaVzey5HaKWHN3pNS_wmyUeyh6ZNTI/view?usp=sharing",
+      "subClass" : [
+        {
+          "id_subClass": 6,
+          "nombre_subClass": "Artista",
+          "imagen_subClass": "https://drive.google.com/file/d/1fsv28vY5oerIvbuJgYAE84GBm2DMz1so/view?usp=sharing",
+          "imagen_superior": "https://drive.google.com/file/d/1Y2lJkZHTV2NIUZ3JhphvWXhElpIII0xB/view?usp=sharing",
+          "imagen_habilidad": "https://drive.google.com/file/d/1gDGHnfpVwIB-XqlcOFZEz5Gyv-w9O7Um/view?usp=sharing",
+          "info": "Clase support, centrada en la cura y escudos a sus aliados. Además, posee algunos ataque de tinta que los realizará a través de su pincel.",
+          "url_video": "https://youtu.be/FJ1e2a71WaU"
+        },
+        {
+          "id_subClass": 12,
+          "nombre_subClass": "Aeromancer",
+          "imagen_subClass": "https://drive.google.com/file/d/1kiRpp9DTY5SoYQagSqyF6TVKtoTIS39p/view?usp=sharing",
+          "imagen_superior": "https://drive.google.com/file/d/1sF1cBUQKI8wVgYxOdczgxboZyOaFVUZe/view?usp=sharing",
+          "imagen_habilidad": "https://drive.google.com/file/d/1OrVfD6CAwrUVHPdgnLS33C0K_3jA0KdO/view?usp=sharing",
+          "info": "La aeromancer se caracteriza golpes elementales a enemigos con su paraguas. Estos ataques pueden llegar a producir efectos en los enemigos. ",
+          "url_video": "https://youtu.be/kixT8G0wWIc"
+        }
+      ]
+
+    },
+    {
+      "id_class": 6,
+      "nombre": "Favoritos",
+      "url_imagen":"https://drive.google.com/file/d/1k24yZcelmGhPTbg2zeJNPfvTgtMF2IXU/view?usp=sharing",
+      "subClass" : []
+    }
+  ]
+}

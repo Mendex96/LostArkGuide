@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/portada"
-    tools:context=".init.MainActivity">
+    tools:context=".init.InitActivity">
 
     <Button
         android:id="@+id/register_button"
@@ -44,7 +44,6 @@
         android:layout_width="237dp"
         android:layout_height="52dp"
         android:fontFamily="serif"
-        android:onClick="logi"
         android:text="@string/log_button"
         android:textSize="25sp"
 

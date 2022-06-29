@@ -62,7 +62,7 @@ public class TypeAdapter
         holder.itemView.setTag(itemList.get(position));
         holder.itemView.setOnClickListener(clickListener);
 
-        holder.contentView.setText(itemList.get(position).content);
+       // holder.contentView.setText(itemList.get(position).content);
 
     }
 
@@ -71,7 +71,7 @@ public class TypeAdapter
 
         ViewHolder(View view) {
             super(view);
-            contentView = view.findViewById(R.id.content);
+            contentView = view.findViewById(R.id.superior);
         }
     }
 }

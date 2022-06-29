@@ -1,35 +1,35 @@
-package com.example.lostaktguide.class_Detail;
+package com.example.lostaktguide.register;
 
 import com.example.lostaktguide.app.GuideMediator;
 
 import java.lang.ref.WeakReference;
 
-public class Class_DetailPresenter implements Class_DetailContract.Presenter {
+public class RegisterPresenter implements RegisterContract.Presenter {
 
-    public static String TAG = Class_DetailPresenter.class.getSimpleName();
+    public static String TAG = RegisterPresenter.class.getSimpleName();
 
-    private WeakReference<Class_DetailContract.View> view;
-    private Class_DetailState state;
-    private Class_DetailContract.Model model;
+    private WeakReference<RegisterContract.View> view;
+    private RegisterState state;
+    private RegisterContract.Model model;
     private GuideMediator mediator;
 
-    public Class_DetailPresenter(GuideMediator mediator) {
+    public RegisterPresenter(GuideMediator mediator) {
         this.mediator = mediator;
-       // state = mediator.getClass_DetailState();
+        //state = mediator.getRegisterState();
     }
 
     @Override
     public void onStart() {
         // Log.e(TAG, "onStart()");
-
+/*
         // initialize the state
-        state = new Class_DetailState();
+        state = new RegisterState();
 
         // call the model and update the state
         state.data = model.getStoredData();
 
         // use passed state if is necessary
-       /* PreviousToClass_DetailState savedState = getStateFromPreviousScreen();
+        PreviousToRegisterState savedState = getStateFromPreviousScreen();
         if (savedState != null) {
 
             // update the model if is necessary
@@ -51,9 +51,9 @@ public class Class_DetailPresenter implements Class_DetailContract.Presenter {
     @Override
     public void onResume() {
         // Log.e(TAG, "onResume()");
-
+/*
         // use passed state if is necessary
-       /* NextToClass_DetailState savedState = getStateFromNextScreen();
+        NextToRegisterState savedState = getStateFromNextScreen();
         if (savedState != null) {
 
             // update the model if is necessary
@@ -61,13 +61,13 @@ public class Class_DetailPresenter implements Class_DetailContract.Presenter {
 
             // update the state if is necessary
             state.data = savedState.data;
-        }*/
+        }
 
         // call the model and update the state
         //state.data = model.getStoredData();
 
         // update the view
-        view.get().onDataUpdated(state);
+        view.get().onDataUpdated(state);*/
 
     }
 
@@ -86,29 +86,29 @@ public class Class_DetailPresenter implements Class_DetailContract.Presenter {
         // Log.e(TAG, "onDestroy()");
     }
 /*
-    private NextToClass_DetailState getStateFromNextScreen() {
-        return mediator.getNextClass_DetailScreenState();
+    private NextToRegisterState getStateFromNextScreen() {
+        return mediator.getNextRegisterScreenState();
     }
 
-    private void passStateToNextScreen(Class_DetailToNextState state) {
-        mediator.setNextClass_DetailScreenState(state);
+    private void passStateToNextScreen(RegisterToNextState state) {
+        mediator.setNextRegisterScreenState(state);
     }
 
-    private void passStateToPreviousScreen(Class_DetailToPreviousState state) {
-        mediator.setPreviousClass_DetailScreenState(state);
+    private void passStateToPreviousScreen(RegisterToPreviousState state) {
+        mediator.setPreviousRegisterScreenState(state);
     }
 
-    private PreviousToClass_DetailState getStateFromPreviousScreen() {
-        return mediator.getPreviousClass_DetailScreenState();
+    private PreviousToRegisterState getStateFromPreviousScreen() {
+        return mediator.getPreviousRegisterScreenState();
     }*/
 
     @Override
-    public void injectView(WeakReference<Class_DetailContract.View> view) {
+    public void injectView(WeakReference<RegisterContract.View> view) {
         this.view = view;
     }
 
     @Override
-    public void injectModel(Class_DetailContract.Model model) {
+    public void injectModel(RegisterContract.Model model) {
         this.model = model;
     }
 

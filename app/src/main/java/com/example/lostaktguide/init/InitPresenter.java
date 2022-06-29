@@ -44,17 +44,17 @@ public class InitPresenter implements InitContract.Presenter {
 
     @Override
     public void loginButtonClicked() {
-    view.get().navigateToLoginScreen();
+        view.get().navigateToLoginScreen();
     }
 
     @Override
     public void registerButtonClicked() {
-
+        view.get().navigateToRegisterScreen();
     }
 
     @Override
     public void guestButtonClicked() {
-
+        view.get().navigateToGuestScreen();
     }
 
     @Override

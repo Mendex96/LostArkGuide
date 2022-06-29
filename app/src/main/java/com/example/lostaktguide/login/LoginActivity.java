@@ -23,7 +23,6 @@ public class LoginActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-       // getSupportActionBar().setTitle(R.string.app_name);
 
         loginButton = findViewById(R.id.reg_button);
         userName = findViewById(R.id.user_nameR);

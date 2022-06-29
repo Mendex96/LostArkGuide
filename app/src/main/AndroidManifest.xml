@@ -25,7 +25,28 @@
             android:screenOrientation="portrait">
 
         </activity>
+        <activity
+            android:name="com.example.lostaktguide.types.TypeActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
 
+        </activity>
+        <activity
+            android:name="com.example.lostaktguide.register.RegisterActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name="com.example.lostaktguide.subclass.SubClassActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name="com.example.lostaktguide.class_Detail.Class_DetailActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+
+        </activity>
     </application>
 
 </manifest>
