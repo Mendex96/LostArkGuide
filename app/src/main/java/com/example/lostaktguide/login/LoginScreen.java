@@ -14,12 +14,11 @@ public class LoginScreen {
         WeakReference<FragmentActivity> context =
                 new WeakReference<>((FragmentActivity) view);
 
-        String data = context.get().getString(R.string.app_name);
 
         GuideMediator mediator = GuideMediator.getInstance();
 
         LoginContract.Presenter presenter = new LoginPresenter(mediator);
-        LoginContract.Model model = new LoginModel(data);
+        LoginContract.Model model = new LoginModel();
         presenter.injectModel(model);
         presenter.injectView(new WeakReference<>(view));
 

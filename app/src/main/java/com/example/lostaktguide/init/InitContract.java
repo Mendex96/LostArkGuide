@@ -1,5 +1,7 @@
 package com.example.lostaktguide.init;
 
+import android.content.Context;
+
 import java.lang.ref.WeakReference;
 
 public interface InitContract {
@@ -14,6 +16,8 @@ public interface InitContract {
         void navigateToRegisterScreen();
 
         void navigateToGuestScreen();
+
+        Context send();
     }
 
         interface Presenter {

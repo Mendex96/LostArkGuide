@@ -1,5 +1,7 @@
 package com.example.lostaktguide.login;
 
+import android.widget.EditText;
+
 import java.lang.ref.WeakReference;
 
 public interface LoginContract {
@@ -10,6 +12,7 @@ public interface LoginContract {
         void onDataUpdated(LoginViewModel viewModel);
 
         void navigateToNextScreen();
+
     }
 
     interface Presenter {
@@ -31,13 +34,6 @@ public interface LoginContract {
     }
 
     interface Model {
-        String getStoredData();
-
-        void onDataFromNextScreen(String data);
-
-        void onRestartScreen(String data);
-
-        void onDataFromPreviousScreen(String data);
     }
 
 }

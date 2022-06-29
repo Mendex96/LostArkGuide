@@ -7,11 +7,11 @@
     android:background="@drawable/fondo_titulo">
 
     <TextView
-        android:id="@+id/password_nameR"
+        android:id="@+id/password_nameL"
         android:layout_width="wrap_content"
         android:layout_height="53dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="24dp"
         android:fontFamily="serif"
         android:shadowColor="#5019DB"
@@ -22,35 +22,36 @@
         android:textColor="@android:color/white"
         android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/user_inputR"
+        app:layout_constraintTop_toBottomOf="@+id/user_inputL"
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/reg_button"
-        android:layout_width="251dp"
-        android:layout_height="63dp"
+        android:id="@+id/log_button"
+        android:layout_width="272dp"
+        android:layout_height="65dp"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginBottom="72dp"
+        android:layout_marginBottom="16dp"
         android:fontFamily="serif"
-        android:text="@string/register_button"
+        android:text="@string/log_button"
         android:textSize="30sp"
         app:cornerRadius="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
         app:layout_constraintStart_toStartOf="parent"
         app:strokeColor="#860AE6"
         app:strokeWidth="4sp"
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/user_nameR"
+        android:id="@+id/user_nameL"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="180dp"
+        android:layout_marginTop="80dp"
         android:layout_marginEnd="24dp"
         android:fontFamily="serif"
         android:shadowColor="#5019DB"
@@ -66,7 +67,7 @@
         tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/user_inputR"
+        android:id="@+id/user_inputL"
         android:layout_width="267dp"
         android:layout_height="44dp"
         android:layout_marginStart="24dp"
@@ -74,17 +75,18 @@
         android:layout_marginEnd="24dp"
         android:background="@drawable/input_test_type"
         android:ems="10"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
         android:paddingStart="20dp"
+        android:paddingEnd="20dp"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.513"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/user_nameR"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@+id/user_nameL"
+        tools:ignore="LabelFor,MissingConstraints" />
 
     <EditText
-        android:id="@+id/password_inputR"
+        android:id="@+id/password_inputL"
         android:layout_width="267dp"
         android:layout_height="44dp"
         android:layout_marginStart="24dp"
@@ -92,12 +94,14 @@
         android:layout_marginEnd="24dp"
         android:background="@drawable/input_test_type"
         android:ems="10"
+        android:importantForAutofill="no"
         android:inputType="textPassword"
         android:paddingStart="20dp"
         android:paddingEnd="20dp"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password_nameR" />
+        app:layout_constraintTop_toBottomOf="@+id/password_nameL"
+        tools:ignore="LabelFor" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

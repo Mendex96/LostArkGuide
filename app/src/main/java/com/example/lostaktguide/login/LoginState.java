@@ -1,6 +1,10 @@
 package com.example.lostaktguide.login;
 
+import android.widget.EditText;
+
 public class LoginState extends LoginViewModel {
 
-    // put the model state here
+    public String user;
+    public String password;
+
 }

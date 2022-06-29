@@ -45,7 +45,6 @@ public class RegisterPresenter implements RegisterContract.Presenter {
         // Log.e(TAG, "onRestart()");
 
         // update the model if is necessary
-        model.onRestartScreen(state.data);
     }
 
     @Override

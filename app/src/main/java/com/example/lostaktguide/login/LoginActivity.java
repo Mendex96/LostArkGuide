@@ -19,17 +19,18 @@ public class LoginActivity
     EditText userText, passwordText;
     private LoginContract.Presenter presenter;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
         loginButton = findViewById(R.id.reg_button);
-        userName = findViewById(R.id.user_nameR);
-        passworsName = findViewById(R.id.password_nameR);
-        passwordText = findViewById(R.id.password_inputR);
-        userText = findViewById(R.id.user_inputR);
-
+        userName = findViewById(R.id.user_nameL);
+        passworsName = findViewById(R.id.password_nameL);
+        passwordText = findViewById(R.id.password_inputL);
+        userText = findViewById(R.id.user_inputL);
 
 
 
@@ -49,7 +50,7 @@ public class LoginActivity
         super.onResume();
 
         // load the data
-       // presenter.onResume();
+       presenter.onResume();
     }
 
     @Override
@@ -92,4 +93,8 @@ public class LoginActivity
     public void injectPresenter(LoginContract.Presenter presenter) {
         this.presenter = presenter;
     }
+    public LoginActivity() {
+        super();
+    }
+
 }

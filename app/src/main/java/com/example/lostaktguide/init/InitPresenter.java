@@ -1,6 +1,13 @@
 package com.example.lostaktguide.init;
 
+import android.app.Activity;
+import android.widget.Toast;
+
 import com.example.lostaktguide.app.GuideMediator;
+import com.example.lostaktguide.app.InitToTypeState;
+import com.example.lostaktguide.data.InitItem;
+import com.example.lostaktguide.init.InitActivity;
+
 
 import java.lang.ref.WeakReference;
 
@@ -54,7 +61,14 @@ public class InitPresenter implements InitContract.Presenter {
 
     @Override
     public void guestButtonClicked() {
+        InitToTypeState item = new InitToTypeState(false);
+        passDataToTypeScreen(item);
         view.get().navigateToGuestScreen();
+
+    }
+
+    private void passDataToTypeScreen(InitToTypeState item) {
+        mediator.setInit_State(item);
     }
 
     @Override

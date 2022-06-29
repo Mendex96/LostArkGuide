@@ -19,13 +19,13 @@ public class ClassItem {
     @NonNull
     public int id_class;
 
-    @ColumnInfo(name = "nombre_clase")
     public String nombre;
-
-    @ColumnInfo(name = "imagen_clase")
     public int url_imagen;
 
     @Ignore
     @SerializedName("subClass")
     public List<SubClassItem> subClass;
+
+    @Ignore
+    public boolean init_state;
 }

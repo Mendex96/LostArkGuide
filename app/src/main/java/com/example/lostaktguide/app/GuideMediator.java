@@ -3,6 +3,7 @@ package com.example.lostaktguide.app;
 import com.example.lostaktguide.class_Detail.Class_DetailState;
 import com.example.lostaktguide.data.ClassItem;
 import com.example.lostaktguide.data.FavoriteItem;
+import com.example.lostaktguide.data.InitItem;
 import com.example.lostaktguide.data.SubClassItem;
 import com.example.lostaktguide.data.UserItem;
 import com.example.lostaktguide.login.LoginState;
@@ -25,6 +26,8 @@ public class GuideMediator {
     private SubClassItem subClass;
     private FavoriteItem favorite;
     private UserItem user;
+    private InitItem initState;
+    private InitToTypeState init_State;
 
     private GuideMediator() {
 
@@ -70,10 +73,16 @@ public class GuideMediator {
         return item;
     }
 
+    public InitToTypeState getInit_State(){
+        InitToTypeState item = init_State;
+        return item;
+    }
+
     public void setClassItem(ClassItem item){Class = item;}
     public void setUser(UserItem item){user = item;}
     public void setSubClass(SubClassItem item){subClass = item;}
     public void setFavorite(FavoriteItem item){favorite = item;}
+    public void setInit_State(InitToTypeState item){init_State = item;}
 
 
 }

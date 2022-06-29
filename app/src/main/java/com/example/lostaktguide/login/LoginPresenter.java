@@ -1,5 +1,7 @@
 package com.example.lostaktguide.login;
 
+import android.util.Log;
+
 import com.example.lostaktguide.app.GuideMediator;
 
 import java.lang.ref.WeakReference;
@@ -42,16 +44,12 @@ public class LoginPresenter implements LoginContract.Presenter {
 
     @Override
     public void onRestart() {
-        // Log.e(TAG, "onRestart()");
-
-        // update the model if is necessary
-        model.onRestartScreen(state.data);
     }
 
     @Override
-    public void onResume() {/*
+    public void onResume() {
         // Log.e(TAG, "onResume()");
-
+/*
         // use passed state if is necessary
         NextTologinState savedState = getStateFromNextScreen();
         if (savedState != null) {
@@ -61,13 +59,13 @@ public class LoginPresenter implements LoginContract.Presenter {
 
             // update the state if is necessary
             state.data = savedState.data;
-        }*/
+        }
 
         // call the model and update the state
-        //state.data = model.getStoredData();
+        state.data = model.getStoredData();
 
         // update the view
-       // view.get().onDataUpdated(state);
+        view.get().onDataUpdated(state);*/
 
     }
 
@@ -78,7 +76,9 @@ public class LoginPresenter implements LoginContract.Presenter {
 
     @Override
     public void onPause() {
-        // Log.e(TAG, "onPause()");
+
+
+
     }
 
     @Override

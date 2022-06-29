@@ -1,5 +1,7 @@
 package com.example.lostaktguide.types;
 
+import com.example.lostaktguide.data.RepositoryContract;
+
 public class TypeModel implements TypeContract.Model {
 
     public static String TAG = TypeModel.class.getSimpleName();
@@ -19,6 +21,11 @@ public class TypeModel implements TypeContract.Model {
     @Override
     public void onRestartScreen(String data) {
         // Log.e(TAG, "onRestartScreen()");
+    }
+
+    @Override
+    public void fetchTypeData(RepositoryContract.GetTypeCallback callback) {
+
     }
 
     @Override

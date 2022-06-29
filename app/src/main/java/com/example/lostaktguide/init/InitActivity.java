@@ -1,5 +1,6 @@
 package com.example.lostaktguide.init;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
@@ -7,6 +8,7 @@ import android.widget.TextView;
 import com.example.lostaktguide.R;
 import com.example.lostaktguide.login.LoginActivity;
 import com.example.lostaktguide.register.RegisterActivity;
+import com.example.lostaktguide.types.TypeActivity;
 
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -78,20 +80,25 @@ public class InitActivity
     }
 
     @Override
+    public Context send() {
+        return getApplicationContext();
+    }
+
+    @Override
     public void navigateToGuestScreen() {
+        Intent intent = new Intent(this, TypeActivity.class);
+        startActivity(intent);
 
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-
         presenter.onDestroy();
     }
 
     @Override
     public void onDataUpdated(InitViewModel viewModel) {
-
     }
 
 
@@ -99,6 +106,4 @@ public class InitActivity
     public void injectPresenter(InitContract.Presenter presenter) {
         this.presenter = presenter;
     }
-
-
 }
